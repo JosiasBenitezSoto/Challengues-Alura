@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Noto+Sans:wght@500&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(233, 233, 233);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: block;
+}
+.incript{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(89, 198, 254);
+    border-radius: 10px;
+    box-shadow: 0 0.2rem 4rem #101010;
+}
+
+.caja-incript{
+    padding: 20px;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px 0;
+}
+
+.cajatexto{
+    height: 25%;
+    width: 80%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 4px 0;
+    border: none;
+    border-radius: 15px;
+    display: block;
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    outline: none;
+    box-shadow: 0 1rem 4rem #101010;
+    
+}
+
+.contenedor-Botones{ 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.btn{
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #94dd77;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color:#dde9eb ;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%) ;
+    transition: all 0.9s;
+}
+.btn:hover{
+   background:rgb(175, 154, 219) ;
+}
+.btn:hover::before{
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+.btn:active{
+    transform: scale(0.9);
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+
+.txt{
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    color: #000;
+}
